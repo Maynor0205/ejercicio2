@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ejercicio2.PageResultado">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Frame BackgroundColor="DarkCyan" Padding="24" CornerRadius="0">
+                <Label Text="FELICITACIONES" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            </Frame>
+
+            <Label Text="{Binding nombres}" FontSize="Title" />
+
+            <Label Text="{Binding apellidos}" FontSize="Title" />
+
+            <Label Text="{Binding edad}" FontSize="Title" />
+
+            <Label Text="{Binding correo}" FontSize="Medium"/>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
